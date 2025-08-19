@@ -1,103 +1,158 @@
 import Image from "next/image";
+import Timer from "./components/timer";
+import Link from "next/link";
+import SectionWrapper from "./components/section-wrapper";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="relative ">
+      <Image
+        alt="Invitation Card"
+        src="/images/back.webp"
+        width={430}
+        height={1000}
+        className="fixed w-screen h-screen -z-20 object-cover"
+      />
+      <div className="relative">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-white z-20">
+          <Timer />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div className="absolute inset-0 bg-black/30"></div>
+        <Image
+          alt="main-image"
+          src="/images/1_copy.webp"
+          width={430}
+          height={1000}
+          className="h-screen w-screen -z-10 object-cover"
+        />
+      </div>
+      <div className="z-10">
+        <div className="flex flex-col items-center gap-4 justify-center text-center p-4">
+          <SectionWrapper>
+            <p className="text-4xl leading-[140%] font-medium font-armBoloragir text-center">
+              Ընկերներ և բարեկամներ
+            </p>
+          </SectionWrapper>
+          <SectionWrapper>
+            <p className="text-2xl leading-[140%] font-armBoloragir text-center">
+              Մենք ցցանկանում ենք Ձեզ հետ կիսել Մեր կյանքի կարևորագույն օրերից
+              մեկը
+            </p>
+          </SectionWrapper>
+          <SectionWrapper>
+            <p className="text-4xl leading-[140%] font-armBoloragir font-medium text-center">
+              Հրավիրում ենք Ձեզ մեր հարսանիքին
+            </p>
+          </SectionWrapper>
+          <SectionWrapper>
+            <p className="text-4xl mt-6 leading-[140%] font-armBoloragir text-center">
+              02․10․2025
+            </p>
+          </SectionWrapper>
+        </div>
+        <div className="flex flex-col mt-4 w-screen">
+          <SectionWrapper>
+            <div className="h-full">
+              <Image
+                alt="couple"
+                src="/images/3.webp"
+                width={270}
+                height={400}
+                className="object-cover justify-self-end"
+              />
+            </div>
+          </SectionWrapper>
+          <SectionWrapper>
+            <div className="h-full">
+              <Image
+                alt="couple"
+                src="/images/3.webp"
+                width={270}
+                height={400}
+                className="object-cover -mt-28 justify-self-start"
+              />
+            </div>
+          </SectionWrapper>
+        </div>
+        <div>
+          <SectionWrapper>
+            <p className="text-6xl mt-20 leading-[140%] font-allegro text-center">
+              Օրվա Ծրագիրը
+            </p>
+          </SectionWrapper>
+          <div className="flex flex-col items-center gap-6 mt-6">
+            <SectionWrapper>
+              <Image
+                alt="image"
+                src="/images/matani.svg"
+                height={180}
+                width={180}
+              />
+            </SectionWrapper>
+            <SectionWrapper>
+              <p className="text-3xl font-armBoloragir">Պսակադրություն</p>
+            </SectionWrapper>
+            <SectionWrapper>
+              <p className="text-2xl font-armBoloragir font-semibold">14։00</p>
+            </SectionWrapper>
+            <SectionWrapper>
+              <p className="text-3xl font-armBoloragir font-semibold">
+                Խոր Վիրապ եկեղեցի
+              </p>
+            </SectionWrapper>
+            <SectionWrapper>
+              <Link
+                href="https://yandex.com/maps/-/CHxuZH2a"
+                className="cursor-pointer"
+                target="_blank"
+              >
+                <button className="px-10 py-4 cursor-pointer text-xl rounded-2xl bg-black text-white">
+                  Ինչպես հասնել
+                </button>
+              </Link>
+            </SectionWrapper>
+          </div>
+          <div className="flex flex-col items-center gap-6 mt-40">
+            <SectionWrapper>
+              <Image
+                alt="image"
+                src="/images/bazhak.svg"
+                height={180}
+                width={180}
+              />
+            </SectionWrapper>
+            <SectionWrapper>
+              <p className="text-3xl font-armBoloragir">
+                Հարսանյաց հանդիսություն
+              </p>
+            </SectionWrapper>
+            <SectionWrapper>
+              <p className="text-2xl font-armBoloragir font-semibold">18։00</p>
+            </SectionWrapper>
+            <SectionWrapper>
+              <p className="text-3xl font-armBoloragir font-semibold">
+                Վահագնի հոլլ
+              </p>
+            </SectionWrapper>
+            <SectionWrapper>
+              <Link
+                href="https://yandex.com/maps/-/CHxufK4l"
+                className="cursor-pointer"
+                target="_blank"
+              >
+                <button className="px-10 py-4 cursor-pointer text-xl rounded-2xl bg-black text-white">
+                  Ինչպես հասնել
+                </button>
+              </Link>
+            </SectionWrapper>
+          </div>
+        </div>
+        <div className="flex justify-center gap-4 my-20">
+          <p className="text-5xl text-center font-armBoloragir">
+            Սիրով սպասում ենք Ձեզ
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
