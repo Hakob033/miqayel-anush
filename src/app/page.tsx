@@ -7,6 +7,7 @@ export default function Home() {
   return (
     <div className="relative ">
       <Image
+        priority
         alt="Invitation Card"
         src="/images/back.webp"
         width={430}
@@ -21,6 +22,7 @@ export default function Home() {
         <Image
           alt="main-image"
           src="/images/1_copy.webp"
+          priority
           width={430}
           height={1000}
           className="h-screen w-screen -z-10 object-cover"
@@ -52,26 +54,32 @@ export default function Home() {
         </div>
         <div className="flex flex-col mt-4 w-screen">
           <SectionWrapper>
-            <Image
-              alt="couple"
-              src="/images/3.webp"
-              width={270}
-              height={400}
-              className="object-cover justify-self-start"
-            />
-          </SectionWrapper>
-          <SectionWrapper>
-            <div className="w-full">
+            <div className="w-full flex justify-start">
               <Image
                 alt="couple"
                 src="/images/3.webp"
+                priority
                 width={270}
                 height={400}
-                className="object-cover -mt-28 justify-self-end"
+                className="object-cover"
+              />
+            </div>
+          </SectionWrapper>
+
+          <SectionWrapper>
+            <div className="w-full flex justify-end -mt-28">
+              <Image
+                alt="couple"
+                src="/images/3.webp"
+                priority
+                width={270}
+                height={400}
+                className="object-cover"
               />
             </div>
           </SectionWrapper>
         </div>
+
         <div className="px-4 sm:px-6 md:px-10 lg:px-20">
           <SectionWrapper>
             <p className="text-6xl mt-20 leading-[140%] font-allegro text-center">
@@ -83,6 +91,7 @@ export default function Home() {
               <Image
                 alt="image"
                 src="/images/matani.svg"
+                priority
                 height={180}
                 width={180}
               />
@@ -113,6 +122,7 @@ export default function Home() {
           <div className="flex flex-col items-center gap-6 mt-40">
             <SectionWrapper>
               <Image
+                priority
                 alt="image"
                 src="/images/bazhak.svg"
                 height={180}
