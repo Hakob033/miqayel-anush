@@ -52,7 +52,7 @@ export default function Home() {
             </p>
           </SectionWrapper>
         </div>
-        <div className="flex flex-col mt-4 w-screen">
+        <div className="flex flex-col mt-10 w-screen">
           <SectionWrapper>
             <div className="w-full flex justify-start">
               <Image
@@ -119,7 +119,7 @@ export default function Home() {
               </Link>
             </SectionWrapper>
           </div>
-          <div className="flex flex-col items-center gap-6 mt-40">
+          <div className="flex flex-col items-center gap-6 mt-32">
             <SectionWrapper>
               <Image
                 priority
@@ -156,7 +156,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex justify-center gap-4 my-20">
-          <p className="text-5xl text-center font-armBoloragir">
+          <p className="text-4xl font-semibold text-center font-armBoloragir">
             Սիրով սպասում ենք Ձեզ
           </p>
         </div>
