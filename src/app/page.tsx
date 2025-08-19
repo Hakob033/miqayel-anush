@@ -35,7 +35,7 @@ export default function Home() {
           </SectionWrapper>
           <SectionWrapper>
             <p className="text-2xl leading-[140%] font-armBoloragir text-center">
-              Մենք ցցանկանում ենք Ձեզ հետ կիսել Մեր կյանքի կարևորագույն օրերից
+              Մենք ցանկանում ենք Ձեզ հետ կիսել Մեր կյանքի կարևորագույն օրերից
               մեկը
             </p>
           </SectionWrapper>
@@ -52,15 +52,13 @@ export default function Home() {
         </div>
         <div className="flex flex-col mt-4 w-screen">
           <SectionWrapper>
-            <div className="h-full">
-              <Image
-                alt="couple"
-                src="/images/3.webp"
-                width={270}
-                height={400}
-                className="object-cover justify-self-end"
-              />
-            </div>
+            <Image
+              alt="couple"
+              src="/images/3.webp"
+              width={270}
+              height={400}
+              className="object-cover justify-self-start"
+            />
           </SectionWrapper>
           <SectionWrapper>
             <div className="h-full">
@@ -69,12 +67,12 @@ export default function Home() {
                 src="/images/3.webp"
                 width={270}
                 height={400}
-                className="object-cover -mt-28 justify-self-start"
+                className="object-cover -mt-28 justify-self-end"
               />
             </div>
           </SectionWrapper>
         </div>
-        <div>
+        <div className="px-4 sm:px-6 md:px-10 lg:px-20">
           <SectionWrapper>
             <p className="text-6xl mt-20 leading-[140%] font-allegro text-center">
               Օրվա Ծրագիրը

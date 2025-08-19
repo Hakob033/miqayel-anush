@@ -44,7 +44,7 @@ const Timer = () => {
         Anush
       </span>
       <span className="text-4xl text-white leading-[140%] text-nowrap font-allegro text-center">
-        2 Հոկտեմբերի 2025
+        <span className=" text-5xl">2</span> Հոկտեմբերի 2025
       </span>
       <p className="text-2xl text-center text-white font-armBoloragir">
         Մնացել է
