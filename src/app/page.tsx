@@ -27,7 +27,7 @@ export default function Home() {
         />
       </div>
       <div className="z-10">
-        <div className="flex flex-col items-center gap-4 justify-center text-center p-4">
+        <div className="flex flex-col items-center gap-4 justify-center px-4 text-center p-4">
           <SectionWrapper>
             <p className="text-4xl leading-[140%] font-medium font-armBoloragir text-center">
               Ընկերներ և բարեկամներ
@@ -61,7 +61,7 @@ export default function Home() {
             />
           </SectionWrapper>
           <SectionWrapper>
-            <div className="h-full">
+            <div className="w-full">
               <Image
                 alt="couple"
                 src="/images/3.webp"
@@ -120,7 +120,7 @@ export default function Home() {
               />
             </SectionWrapper>
             <SectionWrapper>
-              <p className="text-3xl font-armBoloragir">
+              <p className="text-3xl text-center font-armBoloragir">
                 Հարսանյաց հանդիսություն
               </p>
             </SectionWrapper>
