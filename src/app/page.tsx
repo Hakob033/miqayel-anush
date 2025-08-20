@@ -61,6 +61,7 @@ export default function Home() {
               initial={{ x: -200, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, ease: "easeOut" }}
+              viewport={{ once: true, amount: 0.1 }}
             >
               <Image
                 alt="couple"
@@ -78,6 +79,7 @@ export default function Home() {
               initial={{ x: 200, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
+              viewport={{ once: true, amount: 0.1 }}
             >
               <Image
                 alt="couple"
