@@ -64,7 +64,7 @@ const Timer = () => {
         </div>
         <div className="flex flex-col gap-2 text-white items-center p-2">
           <span className="text-4xl font-armBoloragir">{timeLeft.seconds}</span>
-          <span className="font-armBoloragir">Վայրկյան</span>
+          <span className="font-armBoloragir">Վյրկ</span>
         </div>
       </div>
     </div>

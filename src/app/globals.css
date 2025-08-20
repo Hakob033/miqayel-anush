@@ -8,6 +8,11 @@
   font-family: "armBoloragir";
   src: url("../../public/fonts/ArmBoloragir.ttf") format("opentype");
 }
+@font-face {
+  font-family: "armItalic";
+  src: url("../../public/fonts/ArmenianDecorativeU-Italic.ttf")
+    format("opentype");
+}
 
 @theme {
   --color-primary: #1d4ed8;
@@ -16,4 +21,5 @@
   --color-text: #111827;
   --font-allegro: "allegro", Arial, sans-serif;
   --font-armBoloragir: "armBoloragir", Arial, sans-serif;
+  --font-armItalic: "armItalic", Arial, sans-serif;
 }

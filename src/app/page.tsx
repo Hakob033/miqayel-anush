@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import Timer from "./components/timer";
 import Link from "next/link";
 import SectionWrapper from "./components/section-wrapper";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
@@ -15,7 +18,7 @@ export default function Home() {
         className="fixed w-screen h-screen -z-20 object-cover"
       />
       <div className="relative">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-white z-20">
+        <div className="absolute top-3/4 left-1/2 -translate-x-1/2 -translate-y-3/4 text-center text-white z-20">
           <Timer />
         </div>
         <div className="absolute inset-0 bg-black/30"></div>
@@ -29,20 +32,20 @@ export default function Home() {
         />
       </div>
       <div className="z-10">
-        <div className="flex flex-col items-center gap-4 justify-center px-4 text-center p-4">
+        <div className="flex flex-col items-center gap-4 mt-10 justify-center px-4 text-center">
           <SectionWrapper>
-            <p className="text-4xl leading-[140%] font-medium font-armBoloragir text-center">
+            <p className="text-3xl leading-[140%] font-semibold font-armBoloragir text-center">
               Ընկերներ և բարեկամներ
             </p>
           </SectionWrapper>
           <SectionWrapper>
-            <p className="text-2xl leading-[140%] font-armBoloragir text-center">
+            <p className="text-xl leading-[140%] font-armItalic font-medium text-center">
               Մենք ցանկանում ենք Ձեզ հետ կիսել Մեր կյանքի կարևորագույն օրերից
               մեկը
             </p>
           </SectionWrapper>
           <SectionWrapper>
-            <p className="text-4xl leading-[140%] font-armBoloragir font-medium text-center">
+            <p className="text-3xl leading-[140%] font-armBoloragir font-semibold text-center">
               Հրավիրում ենք Ձեզ մեր հարսանիքին
             </p>
           </SectionWrapper>
@@ -53,8 +56,12 @@ export default function Home() {
           </SectionWrapper>
         </div>
         <div className="flex flex-col mt-10 w-screen">
-          <SectionWrapper>
-            <div className="w-full flex justify-start">
+          <div className="w-full flex justify-start">
+            <motion.div
+              initial={{ x: -200, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 1, ease: "easeOut" }}
+            >
               <Image
                 alt="couple"
                 src="/images/3.webp"
@@ -63,11 +70,15 @@ export default function Home() {
                 height={400}
                 className="object-cover"
               />
-            </div>
-          </SectionWrapper>
+            </motion.div>
+          </div>
 
-          <SectionWrapper>
-            <div className="w-full flex justify-end -mt-28">
+          <div className="w-full flex justify-end -mt-28">
+            <motion.div
+              initial={{ x: 200, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
+            >
               <Image
                 alt="couple"
                 src="/images/3.webp"
@@ -76,13 +87,12 @@ export default function Home() {
                 height={400}
                 className="object-cover"
               />
-            </div>
-          </SectionWrapper>
+            </motion.div>
+          </div>
         </div>
-
         <div className="px-4 sm:px-6 md:px-10 lg:px-20">
           <SectionWrapper>
-            <p className="text-6xl mt-20 leading-[140%] font-allegro text-center">
+            <p className="text-6xl mt-20 leading-[140%] font-medium font-allegro text-center">
               Օրվա Ծրագիրը
             </p>
           </SectionWrapper>
@@ -92,8 +102,8 @@ export default function Home() {
                 alt="image"
                 src="/images/matani.svg"
                 priority
-                height={180}
-                width={180}
+                height={150}
+                width={150}
               />
             </SectionWrapper>
             <SectionWrapper>
@@ -125,8 +135,8 @@ export default function Home() {
                 priority
                 alt="image"
                 src="/images/bazhak.svg"
-                height={180}
-                width={180}
+                height={150}
+                width={150}
               />
             </SectionWrapper>
             <SectionWrapper>
@@ -156,7 +166,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex justify-center gap-4 my-20">
-          <p className="text-4xl font-semibold text-center font-armBoloragir">
+          <p className="text-4xl font-semibold text-center font-armItalic">
             Սիրով սպասում ենք Ձեզ
           </p>
         </div>
