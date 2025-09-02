@@ -14,6 +14,10 @@
     format("opentype");
 }
 
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
 @theme {
   --color-white: #fbfbfb;
   --color-silver: #fafafa;
@@ -25,22 +29,22 @@
   --color-black: #1a1a1a;
 
   /* font size */
-  --text-text100: 100px;
-  --text-text80: 80px;
-  --text-text64: 64px;
-  --text-text56: 56px;
-  --text-text50: 50px;
-  --text-text48: 48px;
-  --text-text40: 40px;
-  --text-text32: 32px;
-  --text-text28: 28px;
-  --text-text24: 24px;
-  --text-text20: 20px;
-  --text-text18: 18px;
-  --text-text16: 16px;
-  --text-text15: 15px;
-  --text-text14: 14px;
-  --text-text13: 13px;
+  --text-text100: clamp(32px, 10vw, 100px);
+  --text-text80: clamp(28px, 8vw, 80px);
+  --text-text64: clamp(24px, 6vw, 64px);
+  --text-text56: clamp(22px, 5.5vw, 56px);
+  --text-text50: clamp(20px, 5vw, 50px);
+  --text-text48: clamp(20px, 4.8vw, 48px);
+  --text-text40: clamp(18px, 4vw, 40px);
+  --text-text32: clamp(16px, 3.2vw, 32px);
+  --text-text28: clamp(15px, 2.8vw, 28px);
+  --text-text24: clamp(14px, 2.4vw, 24px);
+  --text-text20: clamp(13px, 2vw, 20px);
+  --text-text18: clamp(13px, 1.8vw, 18px);
+  --text-text16: clamp(12px, 1.6vw, 16px);
+  --text-text15: clamp(12px, 1.5vw, 15px);
+  --text-text14: clamp(12px, 1.4vw, 14px);
+  --text-text13: clamp(12px, 1.3vw, 13px);
 
   /* line height */
   --leading-l110: 110%;
@@ -60,7 +64,7 @@
   --font-armItalic: "armItalic", Arial, sans-serif;
 
   /* screens */
-  --breakpoint-xs: 433px;
+  --breakpoint-xs: 414px;
   --breakpoint-sm: 601px;
   --breakpoint-md: 1025px;
   --breakpoint-xl: 1385px;
