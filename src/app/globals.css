@@ -14,10 +14,6 @@
     format("opentype");
 }
 
-html {
-  -webkit-text-size-adjust: 100%;
-}
-
 @theme {
   --color-white: #fbfbfb;
   --color-silver: #fafafa;
