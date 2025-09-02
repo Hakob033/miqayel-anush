@@ -60,7 +60,7 @@
   --font-armItalic: "armItalic", Arial, sans-serif;
 
   /* screens */
-  --breakpoint-xs: 414px;
+  --breakpoint-xs: 433px;
   --breakpoint-sm: 601px;
   --breakpoint-md: 1025px;
   --breakpoint-xl: 1385px;
