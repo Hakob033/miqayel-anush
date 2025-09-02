@@ -15,11 +15,54 @@
 }
 
 @theme {
-  --color-primary: #1d4ed8;
-  --color-secondary: #f59e0b;
-  --color-background: #f3f4f6;
-  --color-text: #111827;
+  --color-white: #fbfbfb;
+  --color-silver: #fafafa;
+  --color-green: #14e642;
+  --color-grey: #a4a4a4;
+  --color-red: #d61c38;
+  --color-light-blue: #14b7e6;
+  --color-blue: #0c5472;
+  --color-black: #1a1a1a;
+
+  /* font size */
+  --text-text100: 100px;
+  --text-text80: 80px;
+  --text-text64: 64px;
+  --text-text56: 56px;
+  --text-text50: 50px;
+  --text-text48: 48px;
+  --text-text40: 40px;
+  --text-text32: 32px;
+  --text-text28: 28px;
+  --text-text24: 24px;
+  --text-text20: 20px;
+  --text-text18: 18px;
+  --text-text16: 16px;
+  --text-text15: 15px;
+  --text-text14: 14px;
+  --text-text13: 13px;
+
+  /* line height */
+  --leading-l110: 110%;
+  --leading-l120: 120%;
+  --leading-l130: 130%;
+  --leading-l140: 140%;
+
+  /* font weight */
+  --font-weight-bold: 600;
+  --font-weight-semiBold: 500;
+  --font-weight-regular: 400;
+  --font-weight-medium: 300;
+
+  /* font family */
   --font-allegro: "allegro", Arial, sans-serif;
   --font-armBoloragir: "armBoloragir", Arial, sans-serif;
   --font-armItalic: "armItalic", Arial, sans-serif;
+
+  /* screens */
+  --breakpoint-xs: 433px;
+  --breakpoint-sm: 601px;
+  --breakpoint-md: 1025px;
+  --breakpoint-xl: 1385px;
+  --breakpoint-lg: 1561px;
 }

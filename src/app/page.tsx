@@ -32,73 +32,75 @@ export default function Home() {
         />
       </div>
       <div className="z-10">
-        <div className="flex flex-col items-center gap-4 mt-10 justify-center px-4 text-center">
-          <SectionWrapper>
-            <p className="text-3xl leading-[140%] font-semibold font-armBoloragir text-center">
-              Ընկերներ և բարեկամներ
-            </p>
-          </SectionWrapper>
-          <SectionWrapper>
-            <p className="text-xl leading-[140%] font-armItalic font-medium text-center">
-              Մենք ցանկանում ենք Ձեզ հետ կիսել Մեր կյանքի կարևորագույն օրերից
-              մեկը
-            </p>
-          </SectionWrapper>
-          <SectionWrapper>
-            <p className="text-3xl leading-[140%] font-armBoloragir font-semibold text-center">
-              Հրավիրում ենք Ձեզ մեր հարսանիքին
-            </p>
-          </SectionWrapper>
-          <SectionWrapper>
-            <p className="text-4xl mt-6 leading-[140%] font-armBoloragir text-center">
-              02․10․2025
-            </p>
-          </SectionWrapper>
-        </div>
-        <div className="flex flex-col mt-10 w-screen">
-          <div className="w-full flex justify-start">
-            <motion.div
-              initial={{ x: -200, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 1, ease: "easeOut" }}
-              viewport={{ once: true, amount: 0.1 }}
-            >
-              <Image
-                alt="couple"
-                src="/images/3.webp"
-                priority
-                width={270}
-                height={400}
-                className="object-cover"
-              />
-            </motion.div>
+        <div className="md:flex md:px-8 gap-8">
+          <div className="flex flex-col items-center gap-4 md:gap-10 mt-10 justify-center px-4 md:px-0 text-center">
+            <SectionWrapper>
+              <p className="text-text28 md:text-text40 sm:text-text32 leading-[140%] font-semibold font-armBoloragir text-center">
+                Ընկերներ և բարեկամներ
+              </p>
+            </SectionWrapper>
+            <SectionWrapper>
+              <p className="text-text20 leading-[140%] sm:text-text24 md:text-text28 font-armItalic font-medium text-center">
+                Մենք ցանկանում ենք Ձեզ հետ կիսել Մեր կյանքի կարևորագույն օրերից
+                մեկը
+              </p>
+            </SectionWrapper>
+            <SectionWrapper>
+              <p className="text-text28 leading-[140%] sm:text-text32 md:text-text40 font-armBoloragir font-semibold text-center">
+                Հրավիրում ենք Ձեզ մեր հարսանիքին
+              </p>
+            </SectionWrapper>
+            <SectionWrapper>
+              <p className="text-text40 mt-6 leading-[140%] sm:text-text48 md:text-text50 font-armBoloragir text-center">
+                02․10․2025
+              </p>
+            </SectionWrapper>
           </div>
+          <div className="flex flex-col mt-10 w-screen sm:max-w-[570px] sm:justify-self-center ">
+            <div className="w-full flex justify-start">
+              <motion.div
+                initial={{ x: -200, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 1, ease: "easeOut" }}
+                viewport={{ once: true, amount: 0.1 }}
+              >
+                <Image
+                  alt="couple"
+                  src="/images/3.webp"
+                  priority
+                  width={270}
+                  height={400}
+                  className="object-cover xs:w-[330px]"
+                />
+              </motion.div>
+            </div>
 
-          <div className="w-full flex justify-end -mt-28">
-            <motion.div
-              initial={{ x: 200, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
-              viewport={{ once: true, amount: 0.1 }}
-            >
-              <Image
-                alt="couple"
-                src="/images/3.webp"
-                priority
-                width={270}
-                height={400}
-                className="object-cover"
-              />
-            </motion.div>
+            <div className="w-full flex justify-end -mt-28">
+              <motion.div
+                initial={{ x: 200, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
+                viewport={{ once: true, amount: 0.1 }}
+              >
+                <Image
+                  alt="couple"
+                  src="/images/3.webp"
+                  priority
+                  width={270}
+                  height={400}
+                  className="object-cover xs:w-[330px]"
+                />
+              </motion.div>
+            </div>
           </div>
         </div>
         <div className="px-4 sm:px-6 md:px-10 lg:px-20">
           <SectionWrapper>
-            <p className="text-6xl mt-20 leading-[140%] font-medium font-allegro text-center">
+            <p className="text-text64 sm:text-text80 md:text-text100 mt-20 leading-[140%] font-medium font-allegro text-center">
               Օրվա Ծրագիրը
             </p>
           </SectionWrapper>
-          <div className="flex flex-col items-center gap-6 mt-6">
+          <div className="flex flex-col items-center gap-6 sm:gap-8 md:gap-12 mt-6">
             <SectionWrapper>
               <Image
                 alt="image"
@@ -106,16 +108,21 @@ export default function Home() {
                 priority
                 height={150}
                 width={150}
+                className="sm:h-[200px] sm:w-[200px] md:w-[250px] md:h-[250px]"
               />
             </SectionWrapper>
             <SectionWrapper>
-              <p className="text-3xl font-armBoloragir">Պսակադրություն</p>
+              <p className="text-text32 sm:text-text40 md:text-text50 font-armBoloragir">
+                Պսակադրություն
+              </p>
             </SectionWrapper>
             <SectionWrapper>
-              <p className="text-2xl font-armBoloragir font-semibold">14։00</p>
+              <p className="text-text24 sm:text-text32 md:text-text40 font-armBoloragir font-semibold">
+                14։00
+              </p>
             </SectionWrapper>
             <SectionWrapper>
-              <p className="text-3xl font-armBoloragir font-semibold">
+              <p className="text-text32 sm:text-text40 md:text-text50 font-armBoloragir font-semibold">
                 Խոր Վիրապ եկեղեցի
               </p>
             </SectionWrapper>
@@ -125,13 +132,13 @@ export default function Home() {
                 className="cursor-pointer"
                 target="_blank"
               >
-                <button className="px-10 py-4 cursor-pointer text-xl rounded-2xl bg-black text-white">
+                <button className="px-10 py-4 sm:px-14 sm:py-6 cursor-pointer text-text20 sm:text-text28 md:text-text32 rounded-2xl bg-black text-white">
                   Ինչպես հասնել
                 </button>
               </Link>
             </SectionWrapper>
           </div>
-          <div className="flex flex-col items-center gap-6 mt-32">
+          <div className="flex flex-col items-center gap-6 sm:gap-8 md:gap-12 mt-32 sm:mt-44 md:mt-60">
             <SectionWrapper>
               <Image
                 priority
@@ -139,18 +146,21 @@ export default function Home() {
                 src="/images/bazhak.svg"
                 height={150}
                 width={150}
+                className="sm:h-[200px] sm:w-[200px] md:w-[250px] md:h-[250px]"
               />
             </SectionWrapper>
             <SectionWrapper>
-              <p className="text-3xl text-center font-armBoloragir">
+              <p className="text-text32 sm:text-text40 md:text-text50 text-center font-armBoloragir">
                 Հարսանյաց հանդիսություն
               </p>
             </SectionWrapper>
             <SectionWrapper>
-              <p className="text-2xl font-armBoloragir font-semibold">18։00</p>
+              <p className="text-text24 sm:text-text32 md:text-text40 font-armBoloragir font-semibold">
+                18։00
+              </p>
             </SectionWrapper>
             <SectionWrapper>
-              <p className="text-3xl font-armBoloragir font-semibold">
+              <p className="text-text32 sm:text-text40 md:text-text50 font-armBoloragir font-semibold">
                 Վահագնի հոլլ
               </p>
             </SectionWrapper>
@@ -160,15 +170,15 @@ export default function Home() {
                 className="cursor-pointer"
                 target="_blank"
               >
-                <button className="px-10 py-4 cursor-pointer text-xl rounded-2xl bg-black text-white">
+                <button className="px-10 py-4 sm:px-14 sm:py-6 cursor-pointer text-text20 sm:text-text28 md:text-text32 rounded-2xl bg-black text-white">
                   Ինչպես հասնել
                 </button>
               </Link>
             </SectionWrapper>
           </div>
         </div>
-        <div className="flex justify-center gap-4 my-20">
-          <p className="text-4xl font-semibold text-center font-armItalic">
+        <div className="flex justify-center gap-4 my-20 px-4">
+          <p className="text-text40 sm:text-text48 md:text-text56 font-semibold text-center font-armItalic">
             Սիրով սպասում ենք Ձեզ
           </p>
         </div>
