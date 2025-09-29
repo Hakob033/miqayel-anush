@@ -57,7 +57,7 @@ export default function Home() {
             </SectionWrapper>
           </div>
           <div className="flex flex-col mt-10 w-screen sm:max-w-[570px] sm:justify-self-center ">
-            <div className="w-full flex justify-start">
+            <div className="w-full flex justify-start z-30">
               <motion.div
                 initial={{ x: -200, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
