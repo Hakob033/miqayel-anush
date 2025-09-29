@@ -1,22 +1,22 @@
 "use client";
 
 import Image from "next/image";
-import Timer from "./components/timer";
+import Timer from "../components/timer";
 import Link from "next/link";
-import SectionWrapper from "./components/section-wrapper";
+import SectionWrapper from "../components/section-wrapper";
 import { motion } from "framer-motion";
 
 export default function Home() {
   return (
     <div className="relative ">
-      <Image
+      {/* <Image
         priority
         alt="Invitation Card"
         src="/images/back.webp"
         width={430}
         height={1000}
         className="fixed w-screen h-screen -z-20 object-cover"
-      />
+      /> */}
       <div className="relative">
         <div className="absolute top-3/4 left-1/2 -translate-x-1/2 -translate-y-3/4 text-center text-white z-20">
           <Timer />
@@ -24,7 +24,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/30"></div>
         <Image
           alt="main-image"
-          src="/images/1_copy.webp"
+          src="/images/wedding-image-3.jpeg"
           priority
           width={430}
           height={1000}
@@ -66,7 +66,7 @@ export default function Home() {
               >
                 <Image
                   alt="couple"
-                  src="/images/3.webp"
+                  src="/images/wedding-image-2.jpeg"
                   priority
                   width={270}
                   height={400}
@@ -84,7 +84,7 @@ export default function Home() {
               >
                 <Image
                   alt="couple"
-                  src="/images/3.webp"
+                  src="/images/wedding-image-1.jpeg"
                   priority
                   width={270}
                   height={400}
