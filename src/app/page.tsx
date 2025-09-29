@@ -66,7 +66,7 @@ export default function Home() {
               >
                 <Image
                   alt="couple"
-                  src="/images/wedding-image-2.jpeg"
+                  src="/images/wedding-image-1.jpeg"
                   priority
                   width={270}
                   height={400}
@@ -75,7 +75,7 @@ export default function Home() {
               </motion.div>
             </div>
 
-            <div className="w-full flex justify-end -mt-28">
+            <div className="w-full flex justify-end -mt-20">
               <motion.div
                 initial={{ x: 200, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
@@ -84,11 +84,11 @@ export default function Home() {
               >
                 <Image
                   alt="couple"
-                  src="/images/wedding-image-1.jpeg"
+                  src="/images/wedding-image-2.jpeg"
                   priority
                   width={270}
                   height={400}
-                  className="object-cover xs:w-[330px]"
+                  className="object-cover xs:w-[300px]"
                 />
               </motion.div>
             </div>
