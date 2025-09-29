@@ -1,9 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import Timer from "../components/timer";
+import Timer from "./components/timer";
 import Link from "next/link";
-import SectionWrapper from "../components/section-wrapper";
+import SectionWrapper from "./components/section-wrapper";
 import { motion } from "framer-motion";
 
 export default function Home() {
